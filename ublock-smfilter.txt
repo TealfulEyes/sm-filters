@@ -16,4 +16,5 @@ bsky.app##a[data-testid="profileHeaderFollowersButton"] > span.css-1jxf684:nth-o
 bsky.app##a[data-testid="profileHeaderFollowsButton"] > span.css-1jxf684:nth-of-type(1)
 !Removes posts counter
 bsky.app##div.r-12vffkv.css-175oi2r > div.r-12vffkv.css-175oi2r > div.css-146c3p1
-
+!Removes the 10 million followers wiggly graphic
+bsky.app##button[aria-label="Bluesky is celebrating 10 million users!"]
