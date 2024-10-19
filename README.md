@@ -5,8 +5,11 @@ various places of social media platforms such as likes, comments, reposts, follo
 and other various numbers from view.
 
 Created for usage primarily with uBlock Origins on Firefox
-**Current Platforms filterd:** Bluesky
-**Platforms in progress:** Mastodon, Itaku
+
+**Current Platforms filterd:** Bluesky, Mastodon*
+
+**Platforms in progress:** Itaku
+
 **No plans to create filters for:** Twitter, Facebook, Instagram, TikTok
 
 ## How to add filter rules
@@ -15,4 +18,8 @@ Created for usage primarily with uBlock Origins on Firefox
 2. Paste the filter rules in
 3. Click "Apply Changes" and refresh the page
 
-**NOTE: Never add filters from sources you do not trust or understand. If you ar enot comfortalbe with using my filters, do not add them**
+**NOTES:**
+*Mastodon requires you to replace the website section based on the instance you use as your primary. This will only work if you're viewing and exploring from your home instance, not if you directly visit another.
+
+**Never add filters from sources you do not trust or understand. If you are not comfortalbe with using my filters, do not add them**
+
