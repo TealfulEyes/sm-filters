@@ -18,3 +18,10 @@ bsky.app##a[data-testid="profileHeaderFollowsButton"] > span.css-1jxf684:nth-of-
 bsky.app##div.r-12vffkv.css-175oi2r > div.r-12vffkv.css-175oi2r > div.css-146c3p1
 !Removes the 10 million followers wiggly graphic
 bsky.app##button[aria-label="Bluesky is celebrating 10 million users!"]
+
+!Removes Metric numbers from Mastodon, but you will need to replace the site entry with your own instance. If you're from mastodon.social you'll replace mastodon.art with that.
+
+!Removes numbers from the posts, followers, and following on profiles.
+mastodon.art##div.account__header__extra__links > a > span > strong
+!Removes metrics from feed view of posts
+mastodon.art##.animated-number > span > span
