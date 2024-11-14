@@ -2,6 +2,7 @@
 !SOCIAL MEDIA FILTERS!!
 !!!!!!!!!!!!!!!!!!!!!!!
 !In an effort to remove metric counts from view the below filtering rules should remove numbers for things such as liks, reposts, and comments.
+
 !BLUESKY
 !removes reply button counter
 bsky.app##button[data-testid="replyBtn"]>div.css-146c3p1
@@ -16,6 +17,9 @@ bsky.app##div[data-testid="likeCount-expanded"]>span[class="css-1jxf684"]
 !Removes profile follower and following count form profiles
 bsky.app##a[data-testid="profileHeaderFollowersButton"] > span.css-1jxf684:nth-of-type(1)
 bsky.app##a[data-testid="profileHeaderFollowsButton"] > span.css-1jxf684:nth-of-type(1)
+bsky.app##div.r-12vffkv.css-175oi2r > div.r-12vffkv.css-175oi2r > div.css-146c3p1
+!!NOTE:The post count does not currently have a testid or label to properly filter out the metric. 
+!!Since it does not link anywhere and only displays the amount of posts someone ahs made, I've opted to filter the entire div for this
 
 !Removes the 10 million followers wiggly graphic
 bsky.app##button[aria-label="Bluesky is celebrating 10 million users!"]
