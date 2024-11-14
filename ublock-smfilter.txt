@@ -4,18 +4,19 @@
 !In an effort to remove metric counts from view the below filtering rules should remove numbers for things such as liks, reposts, and comments.
 !BLUESKY
 !removes reply button counter
-bsky.app##div[data-testid="replyBtn"]>div.css-146c3p1
+bsky.app##button[data-testid="replyBtn"]>div.css-146c3p1
 !removes like button counter
-bsky.app##div[data-testid="likeBtn"]>div.css-175oi2r>div.css-175oi2r>div.css-146c3p1
+bsky.app##button[data-testid="likeBtn"]>div.css-175oi2r>div.css-175oi2r>div[data-testid="likeCount"]
 !removes repost counter
-bsky.app##div[aria-label="Repost or quote post"]>div.css-175oi2r>div[data-testid="repostCount"]
-!Removes the counter below a post when viewing it individually
-bsky.app##.r-1sp51qo.r-1g94qm0.r-15d164r.r-18u37iz.r-5kkj8d.r-qklmqi.css-175oi2r
+bsky.app##button[aria-label="Repost or quote post"]>div.css-175oi2r>div[data-testid="repostCount"]
+!Removes the counters below expanded view of a post
+bsky.app##div[data-testid="repostCount-expanded"]>span[class="css-1jxf684"]
+bsky.app##div[data-testid="quoteCount-expanded"]>span[class="css-1jxf684"]
+bsky.app##div[data-testid="likeCount-expanded"]>span[class="css-1jxf684"]
 !Removes profile follower and following count form profiles
 bsky.app##a[data-testid="profileHeaderFollowersButton"] > span.css-1jxf684:nth-of-type(1)
 bsky.app##a[data-testid="profileHeaderFollowsButton"] > span.css-1jxf684:nth-of-type(1)
-!Removes posts counter
-bsky.app##div.r-12vffkv.css-175oi2r > div.r-12vffkv.css-175oi2r > div.css-146c3p1
+
 !Removes the 10 million followers wiggly graphic
 bsky.app##button[aria-label="Bluesky is celebrating 10 million users!"]
 
