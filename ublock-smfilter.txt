@@ -17,7 +17,7 @@ bsky.app##div[data-testid="likeCount-expanded"]>span[class="css-1jxf684"]
 !Removes profile follower and following count form profiles
 bsky.app##a[data-testid="profileHeaderFollowersButton"] > span.css-1jxf684:nth-of-type(1)
 bsky.app##a[data-testid="profileHeaderFollowsButton"] > span.css-1jxf684:nth-of-type(1)
-bsky.app##div.r-12vffkv.css-175oi2r > div.r-12vffkv.css-175oi2r > div.css-146c3p1
+bsky.app##div.css-175oi2r:nth-of-type(3) > .r-12vffkv.css-175oi2r > div.css-146c3p1
 !!NOTE:The post count does not currently have a testid or label to properly filter out the metric. 
 !!Since it does not link anywhere and only displays the amount of posts someone ahs made, I've opted to filter the entire div for this
 
