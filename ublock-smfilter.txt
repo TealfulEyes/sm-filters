@@ -1,7 +1,7 @@
 !!!!!!!!!!!!!!!!!!!!!!!
 !SOCIAL MEDIA FILTERS!!
 !!!!!!!!!!!!!!!!!!!!!!!
-!In an effort to remove metric counts from view the below filtering rules should remove numbers for things such as liks, reposts, and comments.
+!In an effort to remove metric counts from view the below filtering rules should remove numbers for things such as likes, reposts, and comments.
 !Updated May 20, 2025
 !BLUESKY
 !removes reply button counter
