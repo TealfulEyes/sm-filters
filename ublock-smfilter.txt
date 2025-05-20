@@ -2,14 +2,14 @@
 !SOCIAL MEDIA FILTERS!!
 !!!!!!!!!!!!!!!!!!!!!!!
 !In an effort to remove metric counts from view the below filtering rules should remove numbers for things such as liks, reposts, and comments.
-
+!Updated May 20, 2025
 !BLUESKY
 !removes reply button counter
 bsky.app##button[data-testid="replyBtn"]>div.css-146c3p1
 !removes like button counter
-bsky.app##button[data-testid="likeBtn"]>div.css-175oi2r>div.css-175oi2r>div[data-testid="likeCount"]
+bsky.app##div[data-testid="likeCount"]
 !removes repost counter
-bsky.app##button[aria-label="Repost or quote post"]>div.css-175oi2r>div[data-testid="repostCount"]
+bsky.app##div[data-testid="repostCount"]
 !Removes the counters below expanded view of a post
 bsky.app##div[data-testid="repostCount-expanded"]>span[class="css-1jxf684"]
 bsky.app##div[data-testid="quoteCount-expanded"]>span[class="css-1jxf684"]
@@ -17,7 +17,7 @@ bsky.app##div[data-testid="likeCount-expanded"]>span[class="css-1jxf684"]
 !Removes profile follower and following count form profiles
 bsky.app##a[data-testid="profileHeaderFollowersButton"] > span.css-1jxf684:nth-of-type(1)
 bsky.app##a[data-testid="profileHeaderFollowsButton"] > span.css-1jxf684:nth-of-type(1)
-bsky.app##div.css-175oi2r:nth-of-type(3) > .r-12vffkv.css-175oi2r > div.css-146c3p1
+bsky.app##div.css-g5y9jx:nth-of-type(3) > .r-12vffkv.css-g5y9jx > div.css-146c3p1
 !!NOTE:The post count does not currently have a testid or label to properly filter out the metric. 
 !!Since it does not link anywhere and only displays the amount of posts someone ahs made, I've opted to filter the entire div for this
 
